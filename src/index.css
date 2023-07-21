@@ -1,0 +1,108 @@
+:root {
+  --font-size-xs: 0.65em;
+  --font-size-s: 0.9em;
+  --font-size-m: 16px;
+  --font-size-l: 1.2rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2.5rem;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --orange: hsl(26, 100%, 55%);
+  --light-orange: hsl(26, 100%, 75%);
+  --pale-orange: hsl(25, 100%, 94%);
+
+  --very-dark-blue: hsl(220, 13%, 13%);
+  --dark-grayish-blue: hsl(219, 9%, 45%);
+  --grayish-blue: hsl(220, 14%, 75%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --white-75: hsla(0, 0%, 100%, 0.75);
+  --black: hsl(0, 0%, 0%);
+  --black-75: hsla(0, 0%, 0%, 0.75);
+
+  --margin-xxs: 0.5em;
+  --margin-xs: 1em;
+  --margin-s: 1.5em;
+  --margin-m: 2em;
+  --margin-l: 4em;
+  --margin-xl: 5em;
+  --margin-xxl: 8em;
+
+  --padding-xxs: 0.1em;
+  --padding-xs: 0.25em;
+  --padding-s: 0.5em;
+  --padding-m: 1em;
+  --padding-l: 1.5em;
+
+  --border-radius-m: 0.5rem;
+  --border-radius-l: 1.2rem;
+
+  --border-gray: 3px solid var(--light-grayish-blue);
+  --border-orange: 3px solid var(--orange);
+
+  --box-shadow-black: 0px 20px 45px -10px var(--black-75);
+  --box-shadow-orange: 0px 20px 30px -20px var(--orange);
+  --box-shadow-gray: 0px 20px 45px -10px var(--grayish-blue);
+
+
+  font-family: 'Kumbh Sans', sans-serif;
+  line-height: 1.5;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-normal);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-width: 375px;
+  max-width: 1440px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide the scrollbar on WebKit-based browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus-visible {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0;
+}
