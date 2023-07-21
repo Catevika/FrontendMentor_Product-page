@@ -1,7 +1,7 @@
 import { createContext, useEffect, useReducer } from 'react';
 import PropTypes from 'prop-types';
 import { INITIAL_STATE } from './CartContextState';
-import CartReducer from './cartReducer';
+import CartReducer from './CartReducer';
 
 
 
