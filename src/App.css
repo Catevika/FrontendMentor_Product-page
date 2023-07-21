@@ -269,7 +269,7 @@
 .product-cart-notification {
   position: absolute;
   top: 30px;
-  right: 11.5rem;
+  right: 21.5rem;
   font-size: var(--font-size-xs);
   padding: var(--padding-xxs) var(--padding-m);
   color: var(--white);
@@ -413,6 +413,10 @@
 
 /*----------  Women page - media queries  ----------*/
 @media (max-width: 1290px) {
+  .product-cart-notification {
+    right: 11.5rem;
+  }
+
   .product-images {
     width: 80%;
   }
