@@ -86,7 +86,7 @@ const Home = ({ isCartOpen }) => {
   return (
     <main className='product-section'>
       <div className='product-container'>
-        <section className='product-images-container'>
+        <div className='product-images-container'>
           <div className='product-images'>
             <div className='product-big-images'>
               {isSmallScreen ? <p className='lightbox-arrow left' onClick={handlePrevious}>
@@ -111,7 +111,7 @@ const Home = ({ isCartOpen }) => {
             </div>
           </div>
           {isLightboxOpen ? <LightBox toggleLightbox={toggleLightbox} /> : null}
-        </section>
+        </div>
         <section className='product-text-container'>
           <div className='product-text'>
             <div className='product-titles'>
