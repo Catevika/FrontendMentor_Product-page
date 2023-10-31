@@ -43,6 +43,11 @@
 }
 
 .header .cart-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
   margin-top: var(--margin-xxs);
   margin-right: var(--margin-xs);
   cursor: pointer;

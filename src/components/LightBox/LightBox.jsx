@@ -10,10 +10,10 @@ import product3Thumbnail from '../../assets/images/image-product-3-thumbnail.jpg
 import product4Thumbnail from '../../assets/images/image-product-4-thumbnail.jpg';
 
 const LightBox = ({ toggleLightbox }) => {
-  const bigImages = [product1, product2, product3, product4];
-  const thumbnailImages = [product1Thumbnail, product2Thumbnail, product3Thumbnail, product4Thumbnail];
+  const bigImages = [ product1, product2, product3, product4 ];
+  const thumbnailImages = [ product1Thumbnail, product2Thumbnail, product3Thumbnail, product4Thumbnail ];
   const lightboxBigImageIndex = sessionStorage.getItem('selectedIndex') || 0;
-  const [lightboxSelectedIndex, setLightboxSelectedIndex] = useState(JSON.parse(lightboxBigImageIndex));
+  const [ lightboxSelectedIndex, setLightboxSelectedIndex ] = useState(JSON.parse(lightboxBigImageIndex));
 
   const handlePrevious = () => {
     if (lightboxSelectedIndex > 0) {
@@ -46,13 +46,13 @@ const LightBox = ({ toggleLightbox }) => {
           <svg className='lightbox-arrow-icon' width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="currentColor" strokeWidth="3" fill="none" fillRule="nonzero" /></svg>
         </p>
         <div className='product-images'>
-          <div className='product-big-images'>
+          <div role="region" aria-label="Product big images" className='product-big-images'>
             {
-              bigImages.map((bigImage, index) => <img key={index} id={index} src={bigImage} alt={`sneaker-${index + 1}`} className={index === lightboxSelectedIndex ? 'product-big-image active' : 'product-big-image'} />)
+              bigImages.map((bigImage, index) => <img key={index} id={`big-image-${index}`} src={bigImage} alt={`sneaker-${index + 1}`} className={index === lightboxSelectedIndex ? 'product-big-image active' : 'product-big-image'} aria-labelledby={`big-image-landmark-${index}`} />)
             }
           </div>
           <div className='product-img-thumbnails-short'>
-            <div className='product-img-thumbnails'>
+            <div role="region" aria-label="Product image thumbnails" className='product-img-thumbnails'>
               {
                 thumbnailImages.map((thumbnailImage, index) => {
                   return (
